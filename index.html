@@ -3,197 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Urva Freight</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, sans-serif;
-        }
-
-        header {
-            background: white;
-            padding: 1.5rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-            border-radius: 30px;
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr auto 1fr;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            gap: 0.5rem;
-        }
-
-        .logo svg {
-            width: 32px;
-            height: 32px;
-        }
-
-        .logo span {
-            color: #000;
-            font-weight: 600;
-            font-size: 1.25rem;
-        }
-
-        nav {
-            display: flex;
-            gap: 2.5rem;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: #000;
-            font-size: 0.95rem;
-            position: relative;
-            padding: 0.25rem 0;
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background-color: #9F7AEA;
-            transition: width 0.3s ease, left 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: #9F7AEA;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-            left: 0;
-        }
-
-        .nav-link.active {
-            color: #9F7AEA;
-        }
-
-        .nav-link.active::after {
-            width: 100%;
-            left: 0;
-        }
-
-        .dashboard-wrapper {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .dashboard-btn {
-            background: #9F7AEA;
-            color: white !important;
-            padding: 0.75rem 1.5rem;
-            border-radius: 9999px;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .dashboard-btn:hover {
-            background: #805AD5;
-        }
-
-        /* Rest of the styles remain the same */
-        .hero {
-            height: calc(100vh - 80px);
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                        url('/api/placeholder/1920/1080');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            max-width: 800px;
-            line-height: 1.2;
-        }
-
-        .hero h1 span {
-            color: #9F7AEA;
-        }
-
-        .services {
-            display: flex;
-            gap: 2rem;
-            margin: 3rem 0;
-            justify-content: center;
-        }
-
-        .service {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            width: 200px;
-        }
-
-        .service svg {
-            width: 32px;
-            height: 32px;
-            margin-bottom: 1rem;
-        }
-
-        .email-form {
-            margin-top: 2rem;
-        }
-
-        .email-form h2 {
-            font-weight: 400;
-            font-size: 1.1rem;
-        }
-
-        .email-form input {
-            padding: 0.75rem 1rem;
-            border: none;
-            border-radius: 0.25rem;
-            min-width: 300px;
-            margin-right: 0.5rem;
-        }
-
-        .email-form button {
-            padding: 0.75rem 1.5rem;
-            background: #9F7AEA;
-            color: white;
-            border: none;
-            border-radius: 0.25rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .email-form button:hover {
-            background: #805AD5;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -221,11 +36,11 @@
         
         <div class="services">
             <div class="service">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="120" height="120" fill="currentColor"><path d="M4.5 7.65311V16.3469L12 20.689L19.5 16.3469V7.65311L12 3.311L4.5 7.65311ZM12 1L21.5 6.5V17.5L12 23L2.5 17.5V6.5L12 1ZM6.49896 9.97065L11 12.5765V17.625H13V12.5765L17.501 9.97066L16.499 8.2398L12 10.8445L7.50104 8.2398L6.49896 9.97065Z"></path></svg>
                 <h3>Order<br>Fulfillment</h3>
             </div>
             <div class="service">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/></svg>
+                <img src="/assets/container.png">
                 <h3>FBA<br>Preparation</h3>
             </div>
             <div class="service">
@@ -246,5 +61,38 @@
             </div>
         </div>
     </main>
+
+    <section class="container">
+        <h2 class="header"><!-- title here --></h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-instance-line"></i></span>
+                <h4>Order Fullfilment</h4>
+                <p>
+                    We handle every step, from receiving and organizing inventory to packing and shipping orders, giving you a completely hands-off experience for your business.
+                </p>
+                <br>
+                <a href="#" target="_blank">Learn More <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-store-2-line"></i></span>
+                <h4>FBA Preparation</h4>
+                <p>
+                    We'll receive, label, and ship your inventory to Amazon fulfillment centers. Our specially trained team helps sellers minimize inbound shipping costs and avoid costly shipment splits.
+                </p>
+                <a href="#" target="_blank"> Learn more <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-corner-down-left-line"></i></span>
+                <h4>Reshipping</h4>
+                <p>
+                    We'll receive your inventory at our tax-free Delaware warehouse and reship it to you, allowing you to bypass sales tax.
+                </p>
+                <br><br>
+                <a href="#" target="_blank">Learn more <i class="ri-arrow-right-line"></i></a>
+            </div>
+            
+        </div>
+    </section>
 </body>
 </html>
