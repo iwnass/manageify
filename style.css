@@ -221,7 +221,7 @@ section .header{
 }
 
 .features .card{
-    background-color: #white;
+    background-color: white;
     padding: 2rem;
     border: 2px solid transparent;
     /* border-radius: 15px; */
@@ -365,6 +365,118 @@ section .header{
     background: #7E22CE;
   }
 
+  .contact-section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    gap: 40px;
+  }
+
+  .contact-content {
+    flex: 1;
+  }
+
+  .contact-form-wrapper {
+    flex: 1;
+  }
+
+  .quote-title {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+  }
+
+  .quote-desc {
+    color: #666;
+    margin-bottom: 25px;
+  }
+
+  .contact-info a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+
+  .promises {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+
+  .promises h2 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .promises ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .promises li {
+    color: #666;
+  }
+
+  .promises li::before {
+    content: "•";
+    color: #4a90e2;
+    margin-right: 8px;
+  }
+
+  .quote-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .quote-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .quote-form input,
+  .quote-form select,
+  .quote-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .quote-form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+
+  .quote-form button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-self: end;
+  }
+
+  .quote-form .required::after {
+    content: "*";
+    color: red;
+  }
+
   @media (max-width: 768px) {
     .features {
         display: grid;
@@ -383,6 +495,9 @@ section .header{
       grid-column: 1 / -1;
     }
 
+    .contact-wrapper {
+      flex-direction: column;
+    }
   }
 
   @media (max-width: 480px) {
