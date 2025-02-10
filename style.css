@@ -11,13 +11,14 @@ header {
     position: fixed;
     top: 1rem;
     z-index: 1000;
+    width: 98%;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    border-radius: 30px;
+    border-radius: 10px;
     margin-bottom: 100px;
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 98%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -65,12 +66,12 @@ nav {
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: #9F7AEA;
+    background-color: #0d9901;
     transition: width 0.3s ease, left 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #9F7AEA;
+    color: #0d9901;
 }
 
 .nav-link:hover::after {
@@ -79,7 +80,7 @@ nav {
 }
 
 .nav-link.active {
-    color: #9F7AEA;
+    color: #0d9901;
 }
 
 .nav-link.active::after {
@@ -93,7 +94,7 @@ nav {
 }
 
 .dashboard-btn {
-    background: #9F7AEA;
+    background: #0d9901;
     color: white !important;
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
@@ -106,12 +107,12 @@ nav {
 }
 
 .dashboard-btn:hover {
-    background: #805AD5;
+    background: #0c8501;
 }
 
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.urvafreight.com/homebg.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("https://www.urvafreight.com/homebg.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -131,7 +132,7 @@ nav {
 }
 
 .hero h1 span {
-    color: #9F7AEA;
+    color: #0d9901;
 }
 
 .services {
@@ -174,7 +175,7 @@ nav {
 
 .email-form button {
     padding: 0.75rem 1.5rem;
-    background: #9F7AEA;
+    background: #0d9901;
     color: white;
     border: none;
     border-radius: 0.25rem;
@@ -183,7 +184,7 @@ nav {
 }
 
 .email-form button:hover {
-    background: #805AD5;
+    background: #0d9901;
 }
 
 section .header{
@@ -216,7 +217,7 @@ section .header{
 
 .features .card span{
     display: inline-block;
-    background-color: #69088f;
+    background-color: #0c8501;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
