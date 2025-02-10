@@ -11,9 +11,9 @@ header {
     position: fixed;
     top: 1rem;
     z-index: 1000;
-    width: 98%;
+    width: 97%;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    border-radius: 10px;
+    border-radius: 7.5px;
     margin-bottom: 100px;
 }
 
@@ -57,6 +57,7 @@ nav {
     font-size: 0.95rem;
     position: relative;
     padding: 0.25rem 0;
+    font-weight: bold;
 }
 
 .nav-link::after {
@@ -96,8 +97,8 @@ nav {
 .dashboard-btn {
     background: #0d9901;
     color: white !important;
-    padding: 0.75rem 1.5rem;
-    border-radius: 9999px;
+    padding: 0.5rem;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -173,6 +174,11 @@ nav {
     margin-right: 0.5rem;
 }
 
+input:focus {
+    outline: 3px solid green; /* Change outline color */
+}
+
+
 .email-form button {
     padding: 0.75rem 1.5rem;
     background: #0d9901;
@@ -184,7 +190,7 @@ nav {
 }
 
 .email-form button:hover {
-    background: #0d9901;
+    background: #0b8300;
 }
 
 section .header{
@@ -197,6 +203,7 @@ section .header{
 
 .features{
     margin-top: 4rem;
+    margin-bottom: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     gap: 2rem;
@@ -238,6 +245,148 @@ section .header{
 }
 
 .features .card a{
-    color: #5c5c5c;
+    color: #01701d;
     text-decoration: none;
 }
+
+
+.footer {
+    padding: 4rem 2rem;
+    background: white;
+    color: #333;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-brand p {
+    color: #666;
+    margin-bottom: 1rem;
+    max-width: 300px;
+  }
+
+  .footer-brand .location {
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-brand .email {
+    color: #666;
+    text-decoration: none;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .footer-section ul {
+    list-style: none;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: #333;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .social-links a {
+    color: #666;
+    text-decoration: none;
+  }
+
+  .footer-bottom {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .email-signup {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .email-signup input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex-grow: 1;
+  }
+
+  .email-signup button {
+    padding: 0.5rem 1rem;
+    background: #9333EA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .email-signup button:hover {
+    background: #7E22CE;
+  }
+
+  @media (max-width: 768px) {
+    .features {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .nav-link, .dashboard-btn{
+        display: none;
+
+    }
+    .footer-content {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer {
+      padding: 2rem 1rem;
+    }
+    
+    .email-signup {
+      flex-direction: column;
+    }
+  }
+
