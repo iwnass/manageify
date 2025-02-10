@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, sans-serif;
+	-webkit-font-smoothing: antialiased;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-variation-settings: normal;
 }
 
 header {
@@ -13,6 +15,7 @@ header {
     z-index: 1000;
     width: 97%;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 7.5px;
     margin-bottom: 100px;
 }
@@ -57,7 +60,7 @@ nav {
     font-size: 0.95rem;
     position: relative;
     padding: 0.25rem 0;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .nav-link::after {
@@ -68,7 +71,7 @@ nav {
     width: 0;
     height: 2px;
     background-color: #0d9901;
-    transition: width 0.3s ease, left 0.3s ease;
+    transition: width 0.5s ease, left 0.5s ease;
 }
 
 .nav-link:hover {
@@ -127,20 +130,23 @@ nav {
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 2rem;
     max-width: 800px;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .hero h1 span {
     color: #0d9901;
+	font-size: 3.5rem;
 }
 
 .services {
     display: flex;
-    gap: 2rem;
-    margin: 3rem 0;
+    gap: 1.5rem;
+	margin: 2rem 0;
     justify-content: center;
+	font-size: 0.875rem;
+	opacity: 0.8;
+	font-size: 10.7px;
 }
 
 .service {
@@ -148,30 +154,32 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 200px;
+    width: 150px;
+	
 }
 
 .service svg {
-    width: 32px;
-    height: 32px;
-    margin-bottom: 1rem;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1px;
 }
 
 .email-form {
-    margin-top: 2rem;
+    margin-top: 0.7rem;
 }
 
 .email-form h2 {
-    font-weight: 400;
-    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+	color: #d3d3d3;
 }
 
 .email-form input {
-    padding: 0.75rem 1rem;
+    padding: 8px;
     border: none;
     border-radius: 0.25rem;
-    min-width: 300px;
-    margin-right: 0.5rem;
+    min-width: 250px;
+    margin-right: 0.5rem;	
 }
 
 input:focus {
@@ -180,13 +188,14 @@ input:focus {
 
 
 .email-form button {
-    padding: 0.75rem 1.5rem;
+    padding: 8px;
     background: #0d9901;
     color: white;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+	font-weight: bold;
 }
 
 .email-form button:hover {
@@ -212,7 +221,7 @@ section .header{
 }
 
 .features .card{
-    background-color: #f6f6f7;
+    background-color: #white;
     padding: 2rem;
     border: 2px solid transparent;
     /* border-radius: 15px; */
