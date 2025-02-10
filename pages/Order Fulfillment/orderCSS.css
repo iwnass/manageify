@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #1f2937;
+  }
+
+  hr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.4;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 2.7rem;
+  }
+
+  .main-section {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+ .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+  .content {
+    flex: 0 1 60%;
+  }
+
+  .image-container {
+    flex: 0 1 30%;
+    position: sticky;
+    top: 2rem;
+  }
+
+ 
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .description {
+    margin-bottom: 2rem;
+    color: #4b5563;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .benefit-item {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .benefit-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+    stroke: #166534;
+  }
+
+  .benefit-title {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .accordion {
+    margin-top: 2rem;
+  }
+
+  .accordion-item {
+    border: 1px solid #e5e7eb;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+
+  .accordion-header {
+    padding: 1rem;
+    background: #f9fafb;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .accordion-header:hover {
+    color: #166534;
+  }
+
+  .accordion-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .accordion-content.active {
+    padding: 1rem;
+    max-height: 500px;
+  }
+
+  .accordion-content ul {
+    list-style-type: none;
+  }
+
+  .accordion-content li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+    color: #4b5563;
+  }
+
+  .accordion-content li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #166534;
+  }
+
+  .accordion-content p {
+    color: #4b5563;
+  }
+
+  @media (max-width: 1024px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .content,
+    .image-container {
+      flex: 1 1 100%;
+    }
+
+    .image-container {
+      position: static;
+      order: 3;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 1rem;
+    }
+
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
