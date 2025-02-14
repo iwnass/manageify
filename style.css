@@ -5,6 +5,7 @@
 	-webkit-font-smoothing: antialiased;
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 	font-variation-settings: normal;
+  scroll-behavior: smooth;
 }
 
 hr{
