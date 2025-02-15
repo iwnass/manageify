@@ -82,12 +82,12 @@ nav {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #0d9901;
+  background-color: black;
   transition: width 0.5s ease, left 0.5s ease;
 }
 
 .nav-link:hover {
-  color: #0d9901;
+  color: #272727;
 }
 
 .nav-link:hover::after {
@@ -96,7 +96,7 @@ nav {
 }
 
 .nav-link.active {
-  color: #0d9901;
+  color: black;
 }
 
 .nav-link.active::after {
@@ -171,7 +171,7 @@ nav {
 }
 
 .mobile-link:hover {
-  color: #0d9901;
+  color: #272727;
 }
 
 hr {
@@ -239,7 +239,7 @@ h1 {
   width: 48px;
   height: 48px;
   margin: 0 auto 1rem;
-  stroke: #166534;
+  stroke: #272727;
 }
 
 .benefit-title {
@@ -269,7 +269,7 @@ h1 {
 }
 
 .accordion-header:hover {
-  color: #166534;
+  color: #272727;
 }
 
 .accordion-content {
@@ -299,7 +299,7 @@ h1 {
   content: "•";
   position: absolute;
   left: 0;
-  color: #166534;
+  color: black;
 }
 
 .accordion-content p {
@@ -367,7 +367,7 @@ h1 {
   
   .hamburger span {
     display: block;
-    background: #0d9901;
+    background: black;
     height: 4px;
     width: 30px;
     transition: all 0.3s ease-in-out;

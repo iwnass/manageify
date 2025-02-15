@@ -82,12 +82,12 @@ nav {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #0d9901;
+  background-color: black;
   transition: width 0.5s ease, left 0.5s ease;
 }
 
 .nav-link:hover {
-  color: #0d9901;
+  color: #272727;
 }
 
 .nav-link:hover::after {
@@ -96,7 +96,7 @@ nav {
 }
 
 .nav-link.active {
-  color: #0d9901;
+  color: black;
 }
 
 .nav-link.active::after {
@@ -171,7 +171,7 @@ nav {
 }
 
 .mobile-link:hover {
-  color: #0d9901;
+  color: black;
 }
 
 .container {
@@ -251,18 +251,18 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e8f5e9;
+  background-color: #dadada;
   border-radius: 6px;
   padding: 0.75rem 1rem;
   margin-top: 1rem;
-  color: #2e7d32;
+  color: #272727;
   text-decoration: none;
   font-size: 0.85rem;
   transition: background-color 0.3s;
 }
 
 .highlight-link:hover {
-  background-color: #c8e6c9;
+  background-color: #818181;
 }
 
 /* Media queries */
@@ -316,7 +316,7 @@ h1 {
   
   .hamburger span {
       display: block;
-      background: #0d9901;
+      background: black;
       height: 4px;
       width: 30px;
       transition: all 0.3s ease-in-out;

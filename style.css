@@ -85,12 +85,12 @@ nav {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #0d9901;
+  background-color: black;
   transition: width 0.5s ease, left 0.5s ease;
 }
 
 .nav-link:hover {
-  color: #0d9901;
+  color: #272727;
 }
 
 .nav-link:hover::after {
@@ -99,7 +99,7 @@ nav {
 }
 
 .nav-link.active {
-  color: #0d9901;
+  color: #272727;
 }
 
 .nav-link.active::after {
@@ -219,12 +219,12 @@ nav {
 }
 
 input:focus {
-  outline: 3px solid green;
+  outline: 3px solid black;
 }
 
 .email-form button {
   padding: 8px;
-  background: #0d9901;
+  background: black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -234,7 +234,7 @@ input:focus {
 }
 
 .email-form button:hover {
-  background: #0b8300;
+  background: #272727;
 }
 
 /* Section header styles */
@@ -305,7 +305,7 @@ section .header {
 
 .features .card span {
   display: inline-block;
-  background-color: #0c8501;
+  background-color: #272727;
   padding: 2px 9px;
   margin-bottom: 1rem;
   font-size: 1.75rem;
@@ -326,7 +326,7 @@ section .header {
 }
 
 .features .card a {
-  color: #01701d;
+  color: #272727;
   text-decoration: none;
 }
 
@@ -465,14 +465,14 @@ section .header {
 }
 
 .quote-form button {
-  background: #01924e;
+  background: #000;
   color: white;
   border: none;
   padding: 10px 30px;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
-  animation: pulse 1.5s infinite;
+  animation: pulse 1.5s ease-in-out;
 }
 
 .quote-form::-webkit-scrollbar {
@@ -492,7 +492,7 @@ section .header {
 }
 
 .quote-form button:hover {
-  background: #01701d;
+  background: #39393b;
 }
 
 .quote-form .required::after {
@@ -557,7 +557,7 @@ section .header {
 }
 
 .footer-section ul li a:hover {
-  color: #3ebe0c;
+  color: #383838;
 }
 
 .social-links {
@@ -595,7 +595,7 @@ section .header {
 
 .email-signup button {
   padding: 0.5rem 1rem;
-  background: #089246;
+  background: #5a5a5a;
   color: white;
   border: none;
   border-radius: 4px;
@@ -604,7 +604,7 @@ section .header {
 }
 
 .email-signup button:hover {
-  background: #22ce6f;
+  background: #474747;
 }
 
 /* Media queries */
@@ -650,7 +650,7 @@ section .header {
   
   .hamburger span {
     display: block;
-    background: #0d9901;
+    background: black;
     height: 4px;
     width: 30px;
     transition: all 0.3s ease-in-out;

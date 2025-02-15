@@ -81,12 +81,12 @@ nav {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #0d9901;
+  background-color: black;
   transition: width 0.5s ease, left 0.5s ease;
 }
 
 .nav-link:hover {
-  color: #0d9901;
+  color: #272727;
 }
 
 .nav-link:hover::after {
@@ -95,7 +95,7 @@ nav {
 }
 
 .nav-link.active {
-  color: #0d9901;
+  color: black;
 }
 
 .nav-link.active::after {
