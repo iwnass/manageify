@@ -330,6 +330,10 @@ section .header {
   text-decoration: none;
 }
 
+.features::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -469,6 +473,10 @@ section .header {
   cursor: pointer;
   transition: background 0.3s ease-in-out;
   animation: pulse 1.5s infinite;
+}
+
+.quote-form::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes pulse {
