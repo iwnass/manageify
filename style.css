@@ -289,9 +289,18 @@ section .header {
   background-color: white;
   padding: 2rem;
   border: 2px solid transparent;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
   border: 1px solid rgb(221, 221, 221);
   width: 90%;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1.5s ease, transform 1.5s ease; /* Smooth transition */
+}
+
+/* Animation when the card is in view */
+.features .card.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .features .card span {
@@ -321,11 +330,32 @@ section .header {
   text-decoration: none;
 }
 
-/* Contact section styles */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contact section styles with animation */
 .contact-section {
   max-width: 1200px;
   margin: 30px auto;
   padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.7s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contact-wrapper {
@@ -344,6 +374,17 @@ section .header {
 .quote-title {
   color: #1a1a1a;
   margin-bottom: 15px;
+  animation: slideInLeft 1s ease-out forwards;
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .quote-desc {
@@ -426,8 +467,20 @@ section .header {
   padding: 10px 30px;
   border-radius: 4px;
   cursor: pointer;
-  justify-self: end;
-  transition: ease-in-out 0.3s;
+  transition: background 0.3s ease-in-out;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .quote-form button:hover {
