@@ -218,6 +218,10 @@ h1 {
   line-height: 1.2;
 }
 
+h1::-webkit-scrollbar {
+  display: none;
+}
+
 .description {
   margin-bottom: 2rem;
   color: #4b5563;

@@ -159,7 +159,7 @@ nav {
 }
 
 .mobile-link:hover {
-  color: #0d9901;
+  color: #000000;
 }
 
 /* Media queries for responsive behavior */
@@ -200,7 +200,7 @@ nav {
 
   .hamburger span {
     display: block;
-    background: #0d9901;
+    background: #000000;
     height: 4px;
     width: 30px;
     transition: all 0.3s ease-in-out;
